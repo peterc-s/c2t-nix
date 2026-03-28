@@ -139,7 +139,7 @@
         ${bastoken}/bin/bastoken "$input" "$tokenized" || exit 1
 
         echo "generating audio $output..."
-        ${c2t}/bin/c2t-96h -2 "$tokenized",801 "$output" || exit 1
+        ${c2t}/bin/c2t-96h -8 "$tokenized",801 "$output" || exit 1
 
         echo 'done!'
       '';
